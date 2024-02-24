@@ -8,9 +8,9 @@ class MusicPlayer(private val context: Context) : MediaPlayer() {
     private val songs =
         arrayOf(R.raw.four_dimensions, R.raw.the_crane_dance, R.raw.divenire, R.raw.choros)
 
-    private var player: MediaPlayer = create(context, songs[0])
-
     private var currentMusic = 0
+
+    private var player: MediaPlayer = create(context, songs[currentMusic])
 
     fun startOrPauseMusic() {
         if (!player.isPlaying)
@@ -20,7 +20,7 @@ class MusicPlayer(private val context: Context) : MediaPlayer() {
     }
 
     fun playerStop() {
-        player.stop()
+        player.reset()
     }
 
     fun playNextMusic() {

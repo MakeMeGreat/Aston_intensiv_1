@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
             Intent(applicationContext, MusicService::class.java).also {
                 it.action = MusicService.Actions.START.toString()
                 startService(it)
-
             }
         }
 
@@ -52,5 +51,4 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
 }
