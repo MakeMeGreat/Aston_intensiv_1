@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Aston_intentsiv_26</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="stopservice">stopService</string>
+    <string name="play_pause">Play/Pause</string>
+    <string name="leave_advice">Tap this button before leave</string>
 </resources>
